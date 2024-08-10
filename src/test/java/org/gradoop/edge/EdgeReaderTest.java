@@ -40,20 +40,15 @@ public class EdgeReaderTest extends AbstractTestBase {
 
     @Test
     public void testReadingTransfer() throws Exception {
-        // Create a sample CSV file for transfers
         File transferFile = createSampleTransferCSV();
 
-        // Create a DataSet of source and target vertices
         DataSet<TemporalVertex> sourceVertices = createSampleVertices("source-id");
         DataSet<TemporalVertex> targetVertices = createSampleVertices("target-id");
 
-        // Read the CSV file using EdgeReader
         DataSet<TemporalEdge> transferEdges = edgeReader.readingTransfer(transferFile.getAbsolutePath(), sourceVertices, targetVertices);
 
-        // Collect the results
         List<TemporalEdge> results = transferEdges.collect();
 
-        // Assertions
         assertNotNull(results);
         assertEquals(1, results.size());
 

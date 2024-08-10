@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66547d4b-f679-43ec-8e1b-d79f5afa776b" name="Changes" comment="parquet and protobuf">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/datasource/DataSourceExtractorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/edge/EdgeMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/edge/EdgeReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/util/HelperFunctionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/vertex/VertexMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/vertex/VertexReaderTest.java" afterDir="false" />
+    <list default="true" id="66547d4b-f679-43ec-8e1b-d79f5afa776b" name="Changes" comment="test added + dependency adjusted">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gradoop/datasource/DataSourceExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gradoop/datasource/DataSourceExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gradoop/GraphBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gradoop/GraphBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gradoop/query/SimpleQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/gradoop/datasource/DataSourceExtractorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/gradoop/edge/EdgeMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/edge/EdgeMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/gradoop/edge/EdgeReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/edge/EdgeReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/gradoop/util/HelperFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/util/HelperFunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/gradoop/vertex/VertexReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/gradoop/vertex/VertexReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2hH1zBplbwQbiUDDUJ5phWdD58M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -87,7 +93,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.gradoop.GraphBuilder" />
       <module name="FinBenchImporter" />
-      <option name="PROGRAM_PARAMETERS" value="-i $PROJECT_DIR$/../Thesis/Dataset/sf0.1 -o $PROJECT_DIR$/../Thesis/Graph/Parquet/sf0.01  " />
+      <option name="PROGRAM_PARAMETERS" value="-i $PROJECT_DIR$/../Thesis/Dataset/sf0.1 -o $PROJECT_DIR$/../Thesis/Graph/Parquet/sf1  " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.gradoop.*" />
@@ -210,7 +216,9 @@
       <workItem from="1722966609470" duration="433000" />
       <workItem from="1722967053196" duration="804000" />
       <workItem from="1722967870819" duration="918000" />
-      <workItem from="1722979498188" duration="608000" />
+      <workItem from="1722979498188" duration="1460000" />
+      <workItem from="1723160839943" duration="609000" />
+      <workItem from="1723235423963" duration="9651000" />
     </task>
     <task id="LOCAL-00001" summary="README + gitignore added">
       <created>1717502925077</created>
@@ -240,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720891114531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test added + dependency adjusted">
+      <created>1723017808005</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723017808005</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +277,7 @@
     <MESSAGE value="ReadMe" />
     <MESSAGE value="directory changed" />
     <MESSAGE value="parquet and protobuf" />
-    <option name="LAST_COMMIT_MESSAGE" value="parquet and protobuf" />
+    <MESSAGE value="test added + dependency adjusted" />
+    <option name="LAST_COMMIT_MESSAGE" value="test added + dependency adjusted" />
   </component>
 </project>

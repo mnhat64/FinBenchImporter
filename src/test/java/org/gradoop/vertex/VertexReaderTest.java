@@ -34,16 +34,10 @@ public class VertexReaderTest extends AbstractTestBase {
 
     @Test
     public void testReadingPerson() throws Exception {
-        // Create a sample CSV file for persons
         File personFile = createSamplePersonCSV();
-
-        // Read the CSV file using VertexReader
         DataSet<TemporalVertex> personVertices = vertexReader.readingPerson(personFile.getAbsolutePath());
-
-        // Collect the results
         List<TemporalVertex> results = personVertices.collect();
 
-        // Assertions
         assertNotNull(results);
         assertEquals(1, results.size());
 

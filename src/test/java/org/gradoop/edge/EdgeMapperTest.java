@@ -28,7 +28,6 @@ public class EdgeMapperTest extends AbstractTestBase {
 
     @Test
     public void testMapTransfer() throws ParseException {
-        // Define the input tuple
         Tuple8<String, String, Double, String, String, String, String, String> edgeData =
                 new Tuple8<>("source-id", "target-id", 1000.0, "2022-08-05 10:15:30", "order123", "payment", "card", "electronics");
         GradoopId sourceId = GradoopId.get();
@@ -39,10 +38,8 @@ public class EdgeMapperTest extends AbstractTestBase {
         Tuple2<Tuple2<Tuple8<String, String, Double, String, String, String, String, String>, GradoopId>, GradoopId> inputTuple =
                 new Tuple2<>(intermediateTuple, targetId);
 
-        // Map the input tuple to a TemporalEdge
         TemporalEdge result = edgeMapper.mapTransfer(inputTuple);
 
-        // Assertions
         assertNotNull(result);
         assertEquals("Transfer", result.getLabel());
         assertEquals(sourceId, result.getSourceId());

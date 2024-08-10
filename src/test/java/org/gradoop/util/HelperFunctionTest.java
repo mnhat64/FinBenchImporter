@@ -33,16 +33,11 @@ public class HelperFunctionTest extends AbstractTestBase {
 
     @Test
     public void testGenerateIdPairs() throws Exception {
-        // Create a DataSet of TemporalVertex objects
         DataSet<TemporalVertex> vertices = createSampleVertices();
-
-        // Generate ID pairs using the HelperFunction
         DataSet<Tuple2<String, GradoopId>> idPairs = HelperFunction.generateIdPairs(vertices);
 
-        // Collect the results
         List<Tuple2<String, GradoopId>> results = idPairs.collect();
 
-        // Assertions
         assertNotNull(results);
         assertEquals(2, results.size());
 
@@ -52,7 +47,6 @@ public class HelperFunctionTest extends AbstractTestBase {
         assertEquals("vertex1", firstPair.f0);
         assertEquals("vertex2", secondPair.f0);
 
-        // Check that GradoopIds are correctly mapped
         assertNotNull(firstPair.f1);
         assertNotNull(secondPair.f1);
     }
